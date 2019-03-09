@@ -93,7 +93,7 @@ void *HashGetValue(HashMap *array,void *key) {
 	for(size_t index=0;index<array->length;index++) {
 		PairValue *item=array->data[index];
 		if(item != NULL && item->key == key) {
-			return value->value;
+			return item->value;
 		}
 	}
 	return NULL;
