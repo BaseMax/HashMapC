@@ -11,8 +11,7 @@
 #ifndef HASH_MAP
 #define HASH_MAP
 
-	#include <stdio.h>
-	#include <stdlib.h>
+	#include <stdlib.h>	//size_t, NULL
 
 	typedef struct {
 		void *key;
