@@ -8,8 +8,8 @@
 * @Repository : https://github.com/BaseMax/HashMapC
 *
 **/
-#ifndef ARRAY
-#define ARRAY
+#ifndef HASH_MAP
+#define HASH_MAP
 
 	#include <stdio.h>
 	#include <stdlib.h>
