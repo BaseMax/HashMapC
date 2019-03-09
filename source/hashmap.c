@@ -62,7 +62,7 @@ PairValue *HashGetIndex(HashMap *array,size_t index) {
 	}
 	return NULL;
 }
-PairValue *HashGetKey(HashMap *array,void *key) {
+PairValue *HashGetWithKey(HashMap *array,void *key) {
 	for(size_t index=0;index<array->length;index++) {
 		PairValue *item=array->data[index];
 		if(item != NULL && item->key == key) {
@@ -71,7 +71,16 @@ PairValue *HashGetKey(HashMap *array,void *key) {
 	}
 	return NULL;
 }
-PairValue *HashGetValue(HashMap *array,void *value) {
+void *HashGetKey(HashMap *array,void *value) {
+	for(size_t index=0;index<array->length;index++) {
+		PairValue *item=array->data[index];
+		if(item != NULL && item->value == value) {
+			return item->key;
+		}
+	}
+	return NULL;
+}
+PairValue *HashGetWithValue(HashMap *array,void *value) {
 	for(size_t index=0;index<array->length;index++) {
 		PairValue *item=array->data[index];
 		if(item != NULL && item->value == value) {
@@ -80,7 +89,15 @@ PairValue *HashGetValue(HashMap *array,void *value) {
 	}
 	return NULL;
 }
-PairValue *HashGetEquals(HashMap *array,PairValue *pair) {
+void *HashGetValue(HashMap *array,void *key) {
+	for(size_t index=0;index<array->length;index++) {
+		PairValue *item=array->data[index];
+		if(item != NULL && item->key == key) {
+			return value->value;
+		}
+	}
+	return NULL;
+}PairValue *HashGetEquals(HashMap *array,PairValue *pair) {
 	for(size_t index=0;index<array->length;index++) {
 		PairValue *item=array->data[index];
 		if(item != NULL &&
