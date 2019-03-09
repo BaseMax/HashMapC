@@ -13,8 +13,10 @@ void HashFree(HashMap *array);
 int HashDeleteIndex(HashMap *array,size_t index);
 void HashDelete(HashMap *array);
 PairValue *HashGetIndex(HashMap *array,size_t index);
-PairValue *HashGetKey(HashMap *array,void *key);
-PairValue *HashGetValue(HashMap *array,void *value);
+PairValue *HashGetWithKey(HashMap *array,void *key);
+void *HashGetKey(HashMap *array,void *value);
+PairValue *HashGetWithValue(HashMap *array,void *value);
+void *HashGetValue(HashMap *array,void *key);
 PairValue *HashGetEquals(HashMap *array,PairValue *pair);
 PairValue *HashGetEqual(HashMap *array,void *key,void *value);
 ```
