@@ -23,13 +23,13 @@ int main() {
 	value->value="test";
 	HashAdd(array,value);
 	assert(array->length == 1);
+	PairValue *get=HashGetIndex(array,0);
+	assert(strcmp(get->value,"test") == 0);
 	HashAdd(array,value);
 	assert(array->length == 2);
 	HashDeleteIndex(array,0);
 	assert(array->data[0] == NULL);
 	assert(array->data[1] != NULL);
-	value->value=NULL;
-	HashAdd(array,value);
-	assert(array->data[2] != NULL);
+	assert(array->data[3] == NULL);
 	return 0;
 }
