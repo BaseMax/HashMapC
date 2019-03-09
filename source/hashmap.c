@@ -97,7 +97,8 @@ void *HashGetValue(HashMap *array,void *key) {
 		}
 	}
 	return NULL;
-}PairValue *HashGetEquals(HashMap *array,PairValue *pair) {
+}
+PairValue *HashGetEquals(HashMap *array,PairValue *pair) {
 	for(size_t index=0;index<array->length;index++) {
 		PairValue *item=array->data[index];
 		if(item != NULL &&
