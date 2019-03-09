@@ -11,7 +11,10 @@
 #ifndef ARRAY
 #define ARRAY
 
-    typedef struct {
+	#include <stdio.h>
+	#include <stdlib.h>
+
+	typedef struct {
 		void *key;
 		void *value;
 	} PairValue;
