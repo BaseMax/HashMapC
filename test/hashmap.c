@@ -15,5 +15,15 @@
 #include "../source/hashmap.h"
 
 int main() {
+	HashMap *array=malloc(sizeof(HashMap));
+	HashInit(array);
+	assert(array->length == 0);
+	PairValue *value=malloc(sizeof(PairValue));
+	value->key="name";
+	value->value="test";
+	HashAdd(array,value);
+	assert(array->length == 1);
+	HashAdd(array,value);
+	assert(array->length == 2);
 	return 0;
 }
