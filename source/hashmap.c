@@ -8,3 +8,4 @@
 * @Repository : https://github.com/BaseMax/HashMapC
 *
 **/
+#include "hashmap.h"
