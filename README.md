@@ -27,7 +27,22 @@ PairValue *HashGetEqual(HashMap *array,void *key,void *value);
 
 ## Compile Example
 
+**Clone : **
+
 ```
 $ git clone https://github.com/BaseMax/HashMapC
 $ cd HashMapC/
-  ```
+```
+
+**Build Example : **
+
+```
+$ gcc example/main.c source/hashmap.c -o example/main
+$ example/main
+```
+
+```
+$ gcc source/hashmap.c -o source/hashmap -c -O3
+$ gcc example/main.c source/hashmap -o example/main
+$ example/main
+```
