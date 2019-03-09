@@ -10,6 +10,7 @@
 **/
 #include <stdio.>
 #include <stdlib.h>
+#include <string.h>
 #include <assert.h>
 #include "../source/hashmap.h"
 
