@@ -8,6 +8,10 @@
 * @Repository : https://github.com/BaseMax/HashMapC
 *
 **/
+#include <stdio.>
+#include <stdlib.h>
+#include "../source/hashmap.h"
+
 int main() {
 	HashMap *array=malloc(sizeof(HashMap));
 	HashInit(array);
