@@ -22,8 +22,8 @@ int main() {
 	HashAdd(array,value);
 	// HashDeleteIndex(array,0);
 	// PairValue *get=HashGetIndex(array,0);
-	// PairValue *get=HashGetKey(array,"name");
-	// PairValue *get=HashGetValue(array,"test");
+	// PairValue *get=HashGetWithKey(array,"name");
+	// PairValue *get=HashGetWithValue(array,"test");
 	PairValue *values=malloc(sizeof(PairValue));
 	values->key="name";
 	values->value="test";
