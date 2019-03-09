@@ -11,6 +11,7 @@
 #include <stdio.>
 #include <stdlib.h>
 #include <assert.h>
+#include "../source/hashmap.h"
 
 int main() {
 	HashMap *array=malloc(sizeof(HashMap));
