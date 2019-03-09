@@ -8,7 +8,7 @@
 * @Repository : https://github.com/BaseMax/HashMapC
 *
 **/
-#include <stdio.>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
